@@ -7,6 +7,7 @@ class EmailParser
   @@emails=[]
   def initialize(estring)
     @@emails=estring.split(/[, ]/)
+    @@emails.delete_if('')
   end 
   def parse
     @@emails
