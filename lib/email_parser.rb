@@ -10,7 +10,7 @@ class EmailParser
     
   end 
   def parse
-    @@emails.delete_if{|x|x=''}
+    @@emails.delete_if{|x|x==''}
     @@emails
   end
 end
