@@ -6,4 +6,7 @@ class EmailParser
   def initialize(estring)
     
   end 
+  def parse
+    
+  end
 end
