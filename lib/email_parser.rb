@@ -7,10 +7,15 @@ class EmailParser
   @@emails=[]
   def initialize(estring)
     @@emails=estring.split(/[, ]/)
-    
+    @@emails.delete_if{|x|x==''}
   end 
   def parse
-    @@emails.delete_if{|x|x==''}
-    @@emails
+    x=[]
+    @@emails.each{|y|
+      if x.include?(y)==FALSE
+        x << y 
+      end
+    x
+    
   end
 end
