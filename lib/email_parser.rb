@@ -9,7 +9,8 @@ class EmailParser
     @@emails=estring.split(/[, ]/)
     
   end 
-  def parse@@emails.delete_if{|x|x=''}
+  def parse
+    @@emails.delete_if{|x|x=''}
     @@emails
   end
 end
