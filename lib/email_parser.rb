@@ -14,8 +14,7 @@ class EmailParser
     @@emails.each{|y|
       if x.include?(y)==FALSE
         x << y 
-      end
+      end}
     x
-    
   end
 end
